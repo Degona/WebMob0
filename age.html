@@ -1,0 +1,27 @@
+
+<html>
+<head>
+  <title>Age Display</title>
+</head>
+<body>
+  <h1>Age Display</h1>
+  <ul id="lista"></ul>
+  <script>
+      //print list in page
+      function ageDisplay(age){
+        var lista =document.getElementById("lista");
+        var i=1;
+        while (i<=age){
+          var li= document.createElement("li");
+          li.appendChild(document.createTextNode(" "+i));
+          lista.appendChild(li);
+          i++;
+        }
+      }
+       //capture age
+      let age = prompt("Please enter your age:");
+
+      ageDisplay(age)
+		</script>
+	</body>
+</html>

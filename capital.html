@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Capital</title>
+</head>
+<body>
+  <h1>Capital Record</h1>
+  <ul id="lista"></ul>
+  <script>
+      //print list in page
+      function capitalRecord(inv, rate, years){
+        var lista =document.getElementById("lista");
+        var i=1;
+        while (i<=5){
+          var li= document.createElement("li");
+          capital= inv*Math.pow(1+rate;i);
+          li.appendChild(document.createTextNode("Capital after year "+i+": "+ capital);
+          lista.appendChild(li);
+          i++;
+        }
+      }
+    
+      let val = prompt("Please enter the amount to invest:");
+      let rate = prompt("Please enter annual interest rate:")
+      let years = prompt("Please enter years of invest:")
+      capitalRecord(val,rate,years)
+		</script>
+	</body>
+</html>
